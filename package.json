@@ -8,10 +8,7 @@
   },
   "scripts": {
     "client": "cd client && npm start",
-    "server": "nodemon server.js",
-    "start": "npm run server",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "node server.js"
   },
   "author": "marouane",
   "license": "ISC",
